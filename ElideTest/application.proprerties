@@ -1,0 +1,12 @@
+# DATASOURCE
+spring.datasource.url=jdbc:postgresql://localhost/testing
+spring.datasource.username=postgres
+spring.datasource.password=test
+spring.datasource.driverClassName=org.postgresql.Driver
+
+#JPA-HIBERNATE
+spring.jpa.show-sql=true
+spring.jpa.hibernate.ddl-auto=update
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.PostgreSQLDialect
+
+spring.jpa.properties.hibernate.current_session_context_class=org.springframework.orm.hibernate5.SpringSessionContext
