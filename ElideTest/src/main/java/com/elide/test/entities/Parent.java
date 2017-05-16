@@ -44,6 +44,7 @@ public class Parent implements Serializable {
     //bi-directional many-to-one association to Child
     @ManyToMany(fetch = FetchType.EAGER)
     @JsonManagedReference
+    @JoinTable(name = "parents_childs")
     public List<Child> getChildren() {
         return this.children;
     }
